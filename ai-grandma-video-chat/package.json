@@ -1,0 +1,30 @@
+{
+  "name": "ai-grandma-video-chat",
+  "version": "1.0.0",
+  "description": "AI Grandma Video Chat application that animates photos with AI responses",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/dist/index.js",
+    "build": "npm run build:server && npm run build:client",
+    "build:server": "cd server && npm run build",
+    "build:client": "cd client && npm run build",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": [
+    "ai",
+    "video",
+    "chat",
+    "grandma",
+    "d-id",
+    "elevenlabs",
+    "openai"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
